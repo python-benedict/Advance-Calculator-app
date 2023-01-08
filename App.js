@@ -2,11 +2,14 @@ import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
+  operations = ['DEL','AC', '+', '-', '*', '/']
 
   const [resultText, setResultText] = useState("")
   const [calcText, setcalcText] = useState("")
 
-  const calculations = () => {};
+  const calculations = () => {
+    setcalcText(eval(resultText))
+  };
 
 
   const onButtonClick = (text) =>{
@@ -28,8 +31,11 @@ export default function App() {
       return setResultText(resultText.toString().substring(0, resultText.length-1))
     }
     console.log(text)
+
+    if(operations.includes(resultText.toString().split("").pop())) return;
+
     setResultText(resultText + text)
-  }
+  };
 
 
   return (
