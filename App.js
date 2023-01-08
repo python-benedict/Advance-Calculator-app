@@ -24,35 +24,35 @@ export default function App() {
           </View>
           <View style={styles.row}>
             <TouchableOpacity >
-              <Text style={styles.number}>1</Text>
+              <Text style={styles.number}>4</Text>
             </TouchableOpacity>
             <TouchableOpacity >
-              <Text style={styles.number}>2</Text>
+              <Text style={styles.number}>5</Text>
             </TouchableOpacity>
             <TouchableOpacity >
-              <Text style={styles.number}>3</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.row}>
-            <TouchableOpacity >
-              <Text style={styles.number}>1</Text>
-            </TouchableOpacity>
-            <TouchableOpacity >
-              <Text style={styles.number}>2</Text>
-            </TouchableOpacity>
-            <TouchableOpacity >
-              <Text style={styles.number}>3</Text>
+              <Text style={styles.number}>6</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.row}>
             <TouchableOpacity >
-              <Text style={styles.number}>1</Text>
+              <Text style={styles.number}>7</Text>
             </TouchableOpacity>
             <TouchableOpacity >
-              <Text style={styles.number}>2</Text>
+              <Text style={styles.number}>8</Text>
             </TouchableOpacity>
             <TouchableOpacity >
-              <Text style={styles.number}>3</Text>
+              <Text style={styles.number}>9</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.row}>
+            <TouchableOpacity >
+              <Text style={styles.number}>=</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>0</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>.</Text>
             </TouchableOpacity>
           </View>
         </View>
