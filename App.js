@@ -44,6 +44,17 @@ export default function App() {
               <Text style={styles.number}>3</Text>
             </TouchableOpacity>
           </View>
+          <View style={styles.row}>
+            <TouchableOpacity >
+              <Text style={styles.number}>1</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>2</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>3</Text>
+            </TouchableOpacity>
+          </View>
         </View>
         <View style={styles.operations}></View>
       </View>
