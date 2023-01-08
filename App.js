@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
+
+  const [resultText, setResultText] = useState("")
+  const [calcText, setcalcText] = useState("")
+
   const onButtonClick = (text) =>{
     console.log(text)
   };
