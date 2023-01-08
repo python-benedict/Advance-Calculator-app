@@ -19,8 +19,19 @@ export default function App() {
 
 
   const onOperationClick = (text) =>{
+    if(text == 'AC'){
+      setResultText(""),
+      setcalcText(0)
+      return;
+    }
+    else if(text == 'DEL'){
+      return setResultText(resultText.toString().substring(0, resultText.length-1))
+    }
     console.log(text)
+    setResultText(resultText + text)
   }
+
+
   return (
     <View style={styles.container}>
       <View style={styles.result}>
