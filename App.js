@@ -6,19 +6,28 @@ export default function App() {
   const [resultText, setResultText] = useState("")
   const [calcText, setcalcText] = useState("")
 
+  const calculations = () => {};
+
+
   const onButtonClick = (text) =>{
     console.log(text)
+    if(text == '='){
+      return calculations()
+    }
+    setResultText(resultText + text)
   };
+
+
   const onOperationClick = (text) =>{
     console.log(text)
   }
   return (
     <View style={styles.container}>
       <View style={styles.result}>
-        <Text style={styles.resultText}>121</Text>
+        <Text style={styles.resultText}>{calcText}</Text>
       </View>
       <View style={styles.calculations}>
-        <Text style={styles.calculationsText}>23+56</Text>
+        <Text style={styles.calculationsText}>{resultText}</Text>
       </View>
       <View style={styles.buttons}>
         <View style={styles.numbers}>
