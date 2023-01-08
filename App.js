@@ -17,4 +17,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  result:{
+    flex:2,
+    backgroundColor:'gray'
+  },
+  calculations:{
+    flex:1,
+    backgroundColor:'white'
+  },
+  buttons:{
+    flex:7,
+    flexDirection:'row'
+  },
+  numbers:{
+    flex: 6,
+    backgroundColor: 'black'
+  },
+  operations:{
+    flex: 1,
+    backgroundColor: 'gray'
+  }
 });
