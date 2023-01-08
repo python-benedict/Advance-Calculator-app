@@ -3,6 +3,9 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function App() {
   const onButtonClick = (text) =>{
     console.log(text)
+  };
+  const onOperationClick = (text) =>{
+    console.log(text)
   }
   return (
     <View style={styles.container}>
@@ -48,18 +51,22 @@ export default function App() {
             </TouchableOpacity>
           </View>
           <View style={styles.row}>
-            <TouchableOpacity onPress={()=>{onButtonClick('=')}}>
-              <Text style={styles.number}>=</Text>
+            <TouchableOpacity onPress={()=>{onButtonClick('.')}}>
+              <Text style={styles.number}>.</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={()=>{onButtonClick(0)}}>
               <Text style={styles.number}>0</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=>{onButtonClick('.')}}>
-              <Text style={styles.number}>.</Text>
+            <TouchableOpacity onPress={()=>{onButtonClick('=')}}>
+              <Text style={styles.number}>=</Text>
             </TouchableOpacity>
           </View>
         </View>
-        <View style={styles.operations}></View>
+        <View style={styles.operations}>
+            <TouchableOpacity onPress={()=>{onOperationClick('DEL')}}>
+              <Text style={styles.operationsButton}>Del</Text>
+            </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
