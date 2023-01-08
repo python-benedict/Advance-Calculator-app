@@ -22,6 +22,18 @@ export default function App() {
               <Text style={styles.number}>3</Text>
             </TouchableOpacity>
           </View>
+          <View style={styles.row}>
+            <TouchableOpacity >
+              <Text style={styles.number}>1</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>2</Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Text style={styles.number}>3</Text>
+            </TouchableOpacity>
+          </View>
+
         </View>
         <View style={styles.operations}></View>
       </View>
@@ -72,7 +84,8 @@ const styles = StyleSheet.create({
   row:{
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 20,
+    flex: 1,
+    alignItems: 'center',
   },
   number:{
     fontSize: 30,
