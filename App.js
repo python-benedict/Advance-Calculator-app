@@ -66,6 +66,21 @@ export default function App() {
             <TouchableOpacity onPress={()=>{onOperationClick('DEL')}}>
               <Text style={styles.operationsButton}>Del</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={()=>{onOperationClick('AC')}}>
+              <Text style={styles.operationsButton}>AC</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={()=>{onOperationClick('+')}}>
+              <Text style={styles.operationsButton}>+</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={()=>{onOperationClick('-')}}>
+              <Text style={styles.operationsButton}>-</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={()=>{onOperationClick('*')}}>
+              <Text style={styles.operationsButton}>*</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={()=>{onOperationClick('/')}}>
+              <Text style={styles.operationsButton}>/</Text>
+            </TouchableOpacity>
         </View>
       </View>
     </View>
