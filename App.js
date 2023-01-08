@@ -110,7 +110,9 @@ const styles = StyleSheet.create({
   },
   operations:{
     flex: 1,
-    backgroundColor: 'gray'
+    backgroundColor: 'gray',
+    justifyContent: 'space-around',
+    alignItems: 'center',
   },
   row:{
     flexDirection: 'row',
