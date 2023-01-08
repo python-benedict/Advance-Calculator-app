@@ -114,6 +114,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
   },
+  operationsButton:{
+    fontWeight: 'bold',
+    color: 'black',
+    fontSize: 25,
+  },
   row:{
     flexDirection: 'row',
     justifyContent: 'space-around',
